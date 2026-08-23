@@ -1,0 +1,340 @@
+/* =========================
+   CONFIGURACIÓN GENERAL
+========================= */
+
+.app {
+  min-height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 25px;
+}
+
+
+/* =========================
+   ENCABEZADO
+========================= */
+
+.header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 35px;
+  padding: 25px 30px;
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+}
+
+.header h1 {
+  margin: 0;
+  color: #1f2937;
+  font-size: 32px;
+  text-align: center;
+}
+
+.usuario-info {
+  position: absolute;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.usuario-info span {
+  color: #4b5563;
+  font-size: 14px;
+}
+
+
+/* =========================
+   SECCIONES
+========================= */
+
+.seccion {
+  background: white;
+  padding: 30px;
+  margin-bottom: 25px;
+
+  border-radius: 18px;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+
+  border: 1px solid #e5e7eb;
+}
+
+.seccion h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  align-items: center;
+  color: #062e15;
+  font-size: 22px;
+}
+
+
+/* =========================
+   BOTONES
+========================= */
+
+.botones {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+button {
+  border: none;
+  border-radius: 10px;
+
+  padding: 12px 18px;
+
+  background: #062e15;
+  color: white;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+button:hover {
+  background: #062e15;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 6px 15px rgba(22, 163, 74, 0.25);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+
+/* =========================
+   BOTÓN CERRAR SESIÓN
+========================= */
+
+.usuario-info button {
+  background: #dc2626;
+}
+
+.usuario-info button:hover {
+  background: #b91c1c;
+}
+
+
+/* =========================
+   PRODUCTOS
+========================= */
+
+.productos {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(240px, 1fr));
+
+  gap: 20px;
+}
+
+.producto {
+  padding: 22px;
+
+  background: #f0fdf4;
+
+  border: 1px solid #bbf7d0;
+
+  border-radius: 15px;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.producto:hover {
+  transform: translateY(-4px);
+
+  box-shadow: 0 8px 20px rgba(22, 163, 74, 0.12);
+}
+
+.producto h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+
+  color: #062e15;
+  font-size: 20px;
+}
+
+.producto p {
+  margin: 8px 0;
+
+  color: #4b5563;
+}
+
+.producto strong {
+  color: #1f2937;
+}
+
+
+/* =========================
+   PRODUCTO BUSCADO
+========================= */
+
+.producto-buscado {
+  margin-top: 20px;
+
+  padding: 20px;
+
+  background: #ecfdf5;
+
+  border-left: 5px solid #062e15;
+
+  border-radius: 10px;
+}
+
+.producto-buscado h3 {
+  margin-top: 0;
+  color: #062e15;
+}
+
+
+/* =========================
+   LOGIN
+========================= */
+
+.login {
+  max-width: 430px;
+
+  margin: 70px auto;
+
+  padding: 35px;
+
+  background: white;
+
+  border-radius: 20px;
+
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+
+  border: 1px solid #e5e7eb;
+}
+
+.login h2 {
+  margin-top: 0;
+  margin-bottom: 25px;
+
+  color: #062e15;
+
+  text-align: center;
+
+  font-size: 26px;
+}
+
+.login form {
+  display: flex;
+  flex-direction: column;
+
+  gap: 15px;
+}
+
+.login input {
+  width: 100%;
+
+  padding: 13px 15px;
+
+  border: 1px solid #d1d5db;
+
+  border-radius: 10px;
+
+  font-size: 14px;
+
+  outline: none;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.login input:focus {
+  border-color: #062e15;
+
+  box-shadow:
+    0 0 0 3px rgba(22, 163, 74, 0.12);
+}
+
+.login button {
+  margin-top: 5px;
+
+  padding: 13px;
+}
+
+
+/* =========================
+   MENSAJES DE ERROR
+========================= */
+
+.error {
+  margin-top: 15px;
+
+  padding: 12px;
+
+  background: #fef2f2;
+
+  border: 1px solid #fecaca;
+
+  border-radius: 8px;
+
+  color: #b91c1c;
+
+  text-align: center;
+}
+
+
+/* =========================
+   TEXTO GENERAL
+========================= */
+
+.seccion > p {
+  color: #6b7280;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 700px) {
+  .app {
+    padding: 20px 15px;
+  }
+
+  .header {
+    flex-direction: column;
+    gap: 20px;
+
+    text-align: center;
+  }
+
+  .header h1 {
+    font-size: 26px;
+  }
+
+  .usuario-info {
+    flex-direction: column;
+  }
+
+  .seccion {
+    padding: 22px;
+  }
+
+  .botones {
+    flex-direction: column;
+  }
+
+  .botones button {
+    width: 100%;
+  }
+}
