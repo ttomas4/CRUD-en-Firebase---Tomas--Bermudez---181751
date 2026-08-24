@@ -1,5 +1,7 @@
 ﻿# CRUD-en-Firebase---Tomas--Bermudez---181751
 
+Hola, ¿cómo estas? Soy Tomás Bermúdez. Curso de Desarrollo en React JS. 181751
+
 Para este proyecto hice un CRUD de productos con Firebase, profundizando mas en la seguridad y usando el Rules Playground.
 
 Instrucciones para clonar el repositorio y abrir la página
@@ -34,21 +36,21 @@ Ejecutar el proyecto:
 
 "npm run dev"
 
-CRUD
+"CRUD"
 
-Crear
+-Crear
 addDoc → ID automático
 setDoc → ID definido
 
-Leer
+-Leer
 getDoc → documento individual
 onSnapshot → lectura en tiempo real
 
-Actualizar
+-Actualizar
 setDoc + merge: true
 updateDoc
 
-Eliminar
+-Eliminar
 deleteDoc
 
 Fotos de la página:
