@@ -36,6 +36,9 @@ Ejecutar el proyecto:
 
 "npm run dev"
 
+Correo para ingresar a la web: tomasbermudez136@gmail.com
+Contraseña: 123456
+
 "CRUD"
 
 -Crear
